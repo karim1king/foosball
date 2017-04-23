@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    link=document.createElement('script');
+    link.src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    function sendLogin(form)
+    {
+
+        var login = document.getElementById("login").value;
+        var password = document.getElementById("password").value;
+        $.ajax({
+            type: "POST",
+            url: "proverka.php",
+            data: {"login":login,"password": password},
+            cache: false,
+            success: function (responce)
+            {
+                if(responce == "0")
+                {
+                    window.location.href = "index.php";
+                }
+                else
+                {
+                    alert(responce);
+                    document.getElementById("passHelp").style.visibility = 'visible';
+                }
+            }
+        })
+    }
+
+</script>
+<div onclick="show('none')" id="wrap"></div>
+<div id="window">
+    <img class="close" onclick="show('none')" alt="Закрыть" src="close.png">
+    <!--<script src="//ulogin.ru/js/ulogin.js"></script>
+    <div id="uLogin" data-ulogin="display=panel;fields=first_name,last_name;providers=vkontakte,facebook,google,yandex;hidden=other;redirect_uri=http%3A%2F%2Ffoosball.mcdir.ru%2Fproverka.php"></div>-->
+<!--    <div id="uLogin" data-ulogin="display=panel;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2Ftfootball.com.ua%2Fproverka.php"></div>-->
+    <form action="proverka.php" method="post" id="formLogin">
+        <label>Ваш Логин:</label>
+        <input name="login" type="text" size="50" id="login"> <span></span>
+        <label>Ваш пароль:</label>
+        <input name="password" type="password" size="50" id="password">
+        <br/>
+        <br/>
+        <input type="button" name="submit" value="Войти" id="submit" class="button" onclick="sendLogin(this.form)"> <span id="passHelp" style="visibility: hidden">Неправильный пароль</span>
+        <br/>
+        <hr>
+        <p>Если вы не зарегистрированы, то можете зарегистрироваться по ссылке <a href="regform.php">регистрация</a></p>
+    </form>
+</div>

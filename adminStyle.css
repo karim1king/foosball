@@ -1,0 +1,303 @@
+body
+{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    background: rgba(255, 255, 247, 0.67);
+    word-wrap:break-word;
+}
+a
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+select
+{
+    height: 30px;
+    margin: 5px;
+}
+/*.block input[type="text"]
+{
+    height: 40px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 100%;
+}*/
+#roundCount input[type="text"]
+{
+    height: 23px;
+    padding: 5px;
+    width: 220px;
+    text-align: center;
+    font-size: 100%;
+}
+#main
+{
+    margin-left: auto;
+    margin-right: auto;
+	max-width:1100px;
+	border: 1px solid black;
+}
+#forma
+{
+    padding: 3px;
+}
+.title
+{
+    font-size: 300%;
+    padding: 2px;
+    color: #521e14;
+    font-style: italic;
+    font-weight: 900;
+    background: rgb(144, 255, 54);
+    background: rgba(130, 230, 49, 0.85);
+    margin: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.button
+{
+    background-color: #8ac007;
+    color: #ffffff;
+    border: 1px solid #8ac007;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0.7% 2%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-color: white;
+    margin-top: 5px;
+}
+.button:hover
+{
+    background-color: #ffffff;
+    color: #8ac007;
+    cursor: pointer;
+}
+.block
+{
+/*    background: rgb(133, 212, 255);*/
+    background: rgba(130, 230, 49, 0.29);
+    margin-bottom: 3px;
+    font-size: 120%;
+    padding: 5px;
+}
+
+.block legend { /* Text and background colour, blue on light gray */
+    /*background-color:rgb(133, 212, 255);*/
+    background: rgba(130, 230, 49, 0.87);
+    font-style: italic;
+    font-weight: 900;
+    border: solid;
+    border-color: white;
+    border-width: thin;
+}
+.leg
+{ /* Text and background colour, blue on light gray */
+    /*background-color:rgb(133, 212, 255);*/
+    font-size: 120%;
+    background: rgb(130, 230, 49);
+    font-style: italic;
+    font-weight: 900;
+    border: solid;
+    border-color: white;
+    border-width: thin;
+    margin-bottom: -2px;
+    padding: 3px;
+
+}
+
+#menu
+{
+    background: #606060;
+	min-height:40px;
+	padding:10px;
+    font-size: 120%;
+}
+
+.hrefMenu
+{
+    margin: 10px;
+    color: #ffffff;
+    font-width: 600;
+ 	padding-left:15px;
+	padding-right:17px;
+	border-left: thick solid #ffffff;
+    border-color: rgba(130, 230, 49, 0.85);;
+}
+#regAndLogin
+{
+    background: #f4dac0;
+    width: 140px;
+    min-width: 140px;
+}
+#mainUser
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1100px;
+    border: 1px solid black;
+
+}
+.menuReg
+{
+    text-align: right;
+}
+
+#news
+{
+
+}
+
+legend
+{
+    font-size: 120%;
+}
+
+label
+{
+    /*float:left; */
+    padding-right:10px;
+    font-size: 100%;
+}
+.field
+{
+    clear:both; text-align:right; line-height:25px;
+}
+.blockUsers
+{
+    padding: 10px; /* Поля вокруг текста */
+    max-height: 400px; /* высота нашего блока */
+    overflow-x: auto; /* прокрутка по горизонтали */
+    overflow-y: auto; /* прокрутка по вертикали */
+    /*border: #ffffff;*/
+    /*background: rgba(130, 230, 49, 0.29);*/
+}
+
+#wrap{
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.725);
+    z-index: 100;
+    overflow: auto;
+}
+
+#window
+{
+    width: 250px;
+    height: 350px;
+    margin: 50px auto;
+    display: none;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    border-radius: 40px;
+    background: rgba(207, 255, 190, 0.85);
+    text-align: left;
+}
+.close
+{
+    margin-top: -20px;
+    margin-left: 210px;
+    cursor: pointer;
+}
+
+#blockCommand
+{
+    margin-top: 30px;
+    height: 200px;
+    /*visibility: hidden;*/
+}
+#download_img
+{
+    display: none;
+}
+#filter
+{
+    padding: 10px;
+    font-size: 120%;
+
+}
+
+.legfilter
+{
+    background-color: #616161;
+    font-size: 120%;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 900;
+    border: solid;
+    border-color: white;
+    border-width: thin;
+    margin-bottom: -2px;
+    padding: 3px;
+}
+
+.buttonfilter
+{
+    background-color: #616161;
+    color: #ffffff;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Verdana,Geneva,Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0.7% 2%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-color: #616161;
+    margin-top: 5px;
+}
+
+.buttonfilter:hover
+{
+    background-color: #ffffff;
+    color: #616161;
+    cursor: pointer;
+}
+span
+{
+    font-size: 85%;
+    color: red;
+    min-height: 20px;
+    display: block;
+}
+
+#formLogin input[type=text],input[type=password]
+{
+    height: 25px;
+    width: 245px;
+    border: 2px dotted gray;
+    border-left:5px solid #82e631;
+}
+#formLogin
+{
+    height: 250px;
+}
+#window span {
+    font-size: 90%;
+    color: red;
+    min-height: 20px;
+    float: right;
+    margin-top: 10px;
+
+}
